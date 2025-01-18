@@ -17,8 +17,3 @@ This project retrieves stored Wi-Fi profile names and their passwords (if availa
 2. For each profile, it executes the `netsh wlan show profile name="PROFILE_NAME" key=clear` command to fetch details, including the password if available.
 3. Passwords (or a note if the password is hidden) are written to a file named `passwords.txt`.
 4. Multithreading divides the workload, making the process faster and more efficient.
-
-## Usage
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
